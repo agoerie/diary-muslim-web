@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "gilroyblack";
+    font-weight: 400;
+    src: url("../../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-Black_0.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "gilroyextrabold";
+    font-weight: 400;
+    src: url("../../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-ExtraBold_0.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "gilroymedium";
+    font-weight: 400;
+    src: url("../../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-Medium_0.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "gilroyregular";
+    font-weight: 400;
+    src: url("../../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-Regular_0.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "gilroysemibold";
+    font-weight: 400;
+    src: url("../../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-SemiBold_0.otf") format("truetype");
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: "gilroymedium";
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 154px;
+    height: 128px;
+    margin: 50px 0px 0px 50px;
+}
+
+.banner {
+    width: 878px;
+    height: 770px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-header {
+    font-size: 48px;
+    color: #4DC8BD;
+}
+
+.button-link {
+    width: 222px;
+    height: 69px;
+}
+
+.row-title-header {
+    margin-left: 100px;
+    margin-top: 170px;
+}
+
+.flex {
+    display: flex;
+}
+
+.apple-button {
+    margin-right: 20px;
+}
+
+.description-header {
+    font-size: 24px;
+    color: #5C6871;
+}
+
+.span-description-header {
+    color: #4DC8BD;
+}
+
+.title-join {
+    font-size: 36px;
+    color: #4DC8BD;
+}
+
+.title-desc-join {
+    font-size: 14px;
+    color: #5C6871;
+}
+
+.row-join {
+    margin: 0px 0px 30px 50px;
+}
+
+.button-submit {
+    width: 193px;
+    height: 48px;
+}
+
+.row-input-submit {
+    width: 574px;
+    border: 1px solid #C4D0D5;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 26px;
+    padding: 6px 6px 6px 0px;
+}
+
+.email-input {
+    margin: 0px 0px 0px 24px;
+    border: -1px;
+    width: 340px;
+    border: 0px;
+    padding-left: 12px;
+}
