@@ -45,7 +45,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
-          key: ${{ secrets.KEY_SERVER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.PORT }}
           envs: GITHUB_USERNAME, GITHUB_TOKEN
           script: |
