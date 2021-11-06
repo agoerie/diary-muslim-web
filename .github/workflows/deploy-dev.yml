@@ -1,7 +1,7 @@
 name: Deploy Prod Diary Muslim
 on:
   push:
-    branches: [main]
+    branches: [dev]
 
 jobs:
   deploy:
@@ -30,7 +30,7 @@ jobs:
       - name: Publish to Github Packages Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          name: agoerie/diary-muslim-web/prod
+          name: agoerie/diary-muslim-web/dev
           registry: ghcr.io
           username: ${{ secrets.G_USERNAME }}
           password: ${{ secrets.G_TOKEN }}
@@ -43,9 +43,9 @@ jobs:
           GITHUB_USERNAME: ${{ secrets.G_USERNAME }}
           GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
         with:
-          host: ${{ secrets.HOST_PROD }}
-          username: ${{ secrets.SERVER_USERNAME_PROD }}
-          password: ${{ secrets.SERVER_PASSWORD_PROD }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.PORT }}
           envs: GITHUB_USERNAME, GITHUB_TOKEN
           script: |
