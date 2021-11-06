@@ -1,0 +1,56 @@
+name: Deploy Prod Diary Muslim
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    name: Deploying to Server Prod
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup node js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+
+      - name: Install packages
+        run: npm i
+
+      - name: Build dev
+        run: |
+          npm run build --if-present
+          build
+        env:
+          CI: false
+
+      - name: Publish to Github Packages Registry
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: agoerie/diary-muslim-web/dev
+          registry: ghcr.io
+          username: ${{ secrets.G_USERNAME }}
+          password: ${{ secrets.G_TOKEN }}
+          dockerfile: Dockerfile
+          tags: latest
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        env:
+          GITHUB_USERNAME: ${{ secrets.G_USERNAME }}
+          GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.KEY_SERVER }}
+          port: ${{ secrets.PORT }}
+          envs: GITHUB_USERNAME, GITHUB_TOKEN
+          script: |
+            cd safira
+            docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
+            docker-compose pull
+            docker-compose up --force-recreate --build -d
+            docker image prune -f
