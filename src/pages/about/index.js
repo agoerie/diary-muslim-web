@@ -15,12 +15,12 @@ const aboutPage = () => {
         RI.
       </p>
       <p>
-        <b>Visi</b> Kami dalam mengembangkan Aplikasi ini untuk mengajak dan
+        <b>Visi</b> kami dalam mengembangkan Aplikasi ini untuk mengajak dan
         mengingatkan saudara Muslim untuk selalu menjadikan AlQuran sebagai
         referensi utama dalam hidup
       </p>
       <p>
-        <b>Misi</b> Kami adalah menghubungkan semua saudara Muslim di dunia
+        <b>Misi</b> kami adalah menghubungkan semua saudara Muslim di dunia
         dengan memberi kemudahan membangun komunitas agar mereka menjadi lebih
         mudah saling mengingatkan, merutinkan membaca, mendengarkan dan berbagi
         motivasi dan inspirasi yang bersumber dari Al-Quran
