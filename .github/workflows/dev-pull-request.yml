@@ -11,9 +11,6 @@ jobs:
     name: Closed PR
     steps:
     - uses: maikmb/github-actions-pr-close-work-item@master
-      with:
-        ado_organization: '${{ secrets.ADO_ORGANIZATION }}'
-        ado_wit: 'User Story'
       env:
         github_token : '${{ secrets.G_TOKEN }}'
         ado_token: '${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}'
