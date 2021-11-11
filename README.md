@@ -1,2 +1,2 @@
 # diary-muslim
-landing page diary muslim update readme
+landing page diary muslim 
