@@ -17,5 +17,5 @@ jobs:
         ado_organization: '${{ secrets.ADO_ORGANIZATION }}'
         ado_project: '${{ secrets.ADO_PROJECT }}'
         ado_wit: 'User Story'
-        ado_on_close_state: 'Done'
-        ado_on_open_state: 'In Review'
+        ado_on_close_state: 'Closed'
+        ado_on_open_state: 'Resolved'
