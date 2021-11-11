@@ -8,7 +8,7 @@ on:
 jobs:
   pr-dev:
     runs-on: ubuntu-latest
-    name: Test workflow
+    name: Closed PR
     steps:
     - uses: CanarysAutomations/pr-update-work-item-state@master
       env:
