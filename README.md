@@ -1,3 +1,3 @@
 # diary-muslim
 
-landing page diary muslim updated
+landing page diary muslim
