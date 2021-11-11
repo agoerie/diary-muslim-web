@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Closed PR
     steps:
-    - uses: maikmb/github-actions-pr-close-work-item@1.8
+    - uses: maikmb/github-actions-pr-close-work-item@master
       with:
         ado_organization: '${{ secrets.ADO_ORGANIZATION }}'
         ado_wit: 'User Story'
@@ -20,5 +20,5 @@ jobs:
         ado_organization: '${{ secrets.ADO_ORGANIZATION }}'
         ado_project: '${{ secrets.ADO_PROJECT }}'
         ado_wit: 'User Story'
-        ado_on_close_state: 'Closed'
-        ado_on_open_state: 'Resolved'
+        ado_on_close_state: 'Done'
+        ado_on_open_state: 'In Review'
