@@ -3,24 +3,20 @@ name: Update work item state when PR is closed
 on:
    pull_request:
     branches: [dev]
-    types: [opened, closed]
+    types: [closed]
 
 jobs:
   pr-dev:
     runs-on: ubuntu-latest
     name: Closed PR
     steps:
-    - uses: maikmb/github-actions-pr-close-work-item@master
-      with:
-        ado_organization: '${{ secrets.ADO_ORGANIZATION }}'
-        ado_wit: 'User Story'
-        ado_on_close_state: 'Done'
-        ado_on_open_state: 'In Review'
+    - uses: CanarysAutomations/pr-update-work-item-state@master
       env:
-        github_token : '${{ secrets.G_TOKEN }}'
+        gh_token : '${{ secrets.G_TOKEN }}'
         ado_token: '${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}'
         ado_organization: '${{ secrets.ADO_ORGANIZATION }}'
         ado_project: '${{ secrets.ADO_PROJECT }}'
-        ado_wit: 'User Story'
-        ado_on_close_state: 'Done'
-        ado_on_open_state: 'In Review'
+        closedstate: 'Done'
+        gh_repo_owner: 'agoerie'
+        gh_repo: 'diary-muslim-web'
+        pull_number: '${{github.event.number}}'
