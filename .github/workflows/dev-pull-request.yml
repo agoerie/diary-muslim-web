@@ -11,10 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: danhellem/github-actions-pr-to-work-item@master
-      with:
-        ado_wit: User Story
-        ado_close_state: Active
-        ado_active_state: Done
       env:
         ado_token: '${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}'
         github_token: '${{ secrets.G_TOKEN }}'
