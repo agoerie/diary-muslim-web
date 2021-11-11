@@ -3,7 +3,7 @@ name: Update work item state when PR is merged
 on:
    pull_request:
     branches: [dev]
-    types: [opened, closed]
+    types: [closed]
 
 jobs:
   pr-dev:
