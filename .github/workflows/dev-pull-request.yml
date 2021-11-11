@@ -1,0 +1,22 @@
+name: Update work item state when PR is merged
+
+on:
+   pull_request:
+    branches: [dev]
+    types: [opened, closed]
+
+jobs:
+  pr-dev:
+    runs-on: ubuntu-latest
+    name: Test workflow
+    steps:
+    - uses: CanarysAutomations/pr-update-work-item-state@master
+      env:
+        gh_token : '${{ secrets.G_TOKEN }}'
+        ado_token: '${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}'
+        ado_organization: '${{ secrets.ADO_ORGANIZATION }}'
+        ado_project: '${{ secrets.ADO_PROJECT }}'
+        closedstate: 'Done'
+        gh_repo_owner: 'agoerie'
+        gh_repo: 'diary-muslim-web'
+        pull_number: '${{github.event.number}}'
