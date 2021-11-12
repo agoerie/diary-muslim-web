@@ -1,4 +1,4 @@
-name: Deploy Prod Diary Muslim
+name: Deploy Dev Diary Muslim
 on:
   push:
     branches: [dev]
