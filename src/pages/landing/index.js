@@ -58,7 +58,7 @@ const landingPage = () => {
         <div className="footer-left">
           <p className="description">
             <span className="span-description-header">DiaryMuslim</span>{" "}
-            application, Digital Quran experience based on
+            application, Digital Quran based on
             <br />
             social media experience and features to make it easier to build a
             Muslim
