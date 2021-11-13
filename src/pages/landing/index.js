@@ -24,9 +24,9 @@ const landingPage = () => {
                     1 <sup>st</sup>
                   </b>
                 </span>{" "}
-                Digital Al-Quran
+                Digital Al-Quran application
                 <br />
-                application based on social media
+                based on social media
                 <br />
                 engagement experience{" "}
               </span>
@@ -60,7 +60,8 @@ const landingPage = () => {
             <span className="span-description-header">DiaryMuslim</span>{" "}
             application, Digital Quran experience based on
             <br />
-            social media features to make it easier to build a Muslim
+            social media experience and features to make it easier to build a
+            Muslim
             <br />
             community to remind, motivate, and share life inspiration
             <br />
