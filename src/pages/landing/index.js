@@ -4,7 +4,7 @@ import logo from "./images/logo.png";
 import banner from "./images/banner.png";
 import buttonAndroid from "./images/button-android.png";
 import buttonApple from "./images/button-apple.png";
-import buttonSubmit from "./images/button-submit.png";
+import buttonIg from "./images/button-ig.png";
 
 import "./styles.css";
 
@@ -15,7 +15,25 @@ const landingPage = () => {
         <div>
           <img src={logo} alt="" className="logo" />
           <div className="row-title-header">
-            <h1 className="title-header"> ios & android </h1>
+            <div className="wrapper-caption">
+              <span className="title-caption color-green">
+                {" "}
+                The{" "}
+                <span className="caption-big">
+                  <b>
+                    1 <sup>st</sup>
+                  </b>
+                </span>{" "}
+                Digital Al-Quran
+                <br />
+                application based on social media
+                <br />
+                engagement experience{" "}
+              </span>
+            </div>
+            <span className="title-header color-green"> ios & android </span>
+            <br />
+            <span className="title-version color-green">(BETA VERSION)</span>
             <div>
               <p className="description-header">
                 Download{" "}
@@ -36,21 +54,24 @@ const landingPage = () => {
         </div>
         <img src={banner} alt="" className="banner" />
       </div>
-      <div>
-        <div className="row-join">
-          <h1 className="title-join"> join our mailing list </h1>
-          <p className="title-desc-join">
-            Get exclusive product offers, opportunities, news and stories
-            directly to your inbox.
+      <div className="wrapper-footer flex-between">
+        <div className="footer-left">
+          <p className="description">
+            <span className="span-description-header">DiaryMuslim</span>{" "}
+            application, Digital Quran experience based on
+            <br />
+            social media features to make it easier to build a Muslim
+            <br />
+            community to remind, motivate, and share life inspiration
+            <br />
+            based on the Al-Quran
           </p>
-          <div className="row-input-submit">
-            <input
-              type="text"
-              placeholder={"Enter your email"}
-              className="email-input"
-            />
-            <img src={buttonSubmit} alt="" className="button-submit" />
-          </div>
+          <span className="copy">
+            Copyright - 2021 | All Right Reserved | PT Diary Muslim Infomedia
+          </span>
+        </div>
+        <div className="footer-right">
+          <img src={buttonIg} alt="" className="button-link" />
         </div>
       </div>
     </div>
