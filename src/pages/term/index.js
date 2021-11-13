@@ -3,7 +3,7 @@ import "./styles.css";
 const termPage = () => {
   return (
     <div class="about-section">
-      <h1>Syarat & Ketentuan</h1>
+      {/* <h1>Syarat & Ketentuan</h1> */}
       <h4>Selamat Datang di Aplikasi Diary Muslim! </h4>
       <p>Saudara-saudara Muslim yang Kami Cintai</p>
       <p class="line-space">
