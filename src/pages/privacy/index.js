@@ -3,7 +3,7 @@ import "../term/styles.css";
 const privacyPage = () => {
   return (
     <div class="about-section">
-      <h1>Kebijakan Privasi DiaryMuslim</h1>
+      {/* <h1>Kebijakan Privasi DiaryMuslim</h1> */}
       <p>Bismillahirahmanirrahim, Selamat Datang di Aplikasi DiaryMuslim</p>
       <p>
         Alhamdulillah, Segala puji hanya milik Allah SWT dan Terima kasih atas
