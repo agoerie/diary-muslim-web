@@ -47,7 +47,13 @@ const landingPage = () => {
                   alt=""
                   className="button-link apple-button"
                 />
-                <img src={buttonAndroid} alt="" className="button-link" />
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.diarymuslim"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={buttonAndroid} alt="" className="button-link" />
+                </a>
               </div>
             </div>
           </div>
