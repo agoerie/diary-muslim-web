@@ -78,7 +78,13 @@ const landingPage = () => {
           </span>
         </div>
         <div className="footer-right">
-          <img src={buttonIg} alt="" className="button-link" />
+          <a
+            href="https://www.instagram.com/diarymuslim.official/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={buttonIg} alt="" className="button-link" />
+          </a>
         </div>
       </div>
     </div>
