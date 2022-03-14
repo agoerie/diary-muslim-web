@@ -347,9 +347,7 @@ const privacyPage = () => {
         <a href="mailto:contact@diarymuslim.com">contact@diarymuslim.com</a>
       </p>
       <br />
-      <span class="span-bold mt-10">
-        Kebijakan Privasi ini berlaku sejak: 13 Maret 2022
-      </span>
+      <span class="span-bold mt-10">Pembaruan Terakhir: 13 Maret 2022</span>
       <p>
         <span class="span-bold">Hak Cipta PT Diary Muslim Infomedia</span>
       </p>
