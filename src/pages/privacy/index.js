@@ -4,18 +4,17 @@ const privacyPage = () => {
   return (
     <div class="about-section">
       <h1>Kebijakan Privasi DiaryMuslim</h1>
-      <p>Bismillahirahmanirrahim, Selamat Datang di Aplikasi DiaryMuslim</p>
+      <p>
+        Bismillahirahmanirrahim, Selamat Datang di Layanan Aplikasi Diary Muslim
+      </p>
       <p>
         Alhamdulillah, Segala puji hanya milik Allah SWT dan Terima kasih atas
-        dukungan Anda terhadap Aplikasi DiaryMuslim (“Aplikasi”). Kami mencoba
-        mambangun Aplikasi yang semoga bisa bermanfaat sepenuhnya untuk saudara
+        dukungan Anda terhadap Layanan Aplikasi Diary Muslim (“Layanan”). Kami
+        mencoba mambangun Layanan yang bisa bermanfaat sepenuhnya untuk saudara
         muslim dengan cara menghadirkan pengalaman dan fitur yang sesuai dengan
-        kebutuhan umat.
-      </p>
-      <p class="line-space">
-        Kebijakan Privasi ini bertujuan untuk menjelaskan bagaimana privasi Anda
-        dilindungi saat kami mengumpulkan, mengolah, mengungkapkan dan
-        menggunakan informasi pribadi Anda.{" "}
+        kebutuhan umat. Kebijakan Privasi ini bertujuan untuk menjelaskan
+        bagaimana privasi Anda dilindungi saat kami mengumpulkan, mengolah,
+        mengungkapkan dan menggunakan informasi pribadi Anda.
       </p>
       <span class="span-bold">1. Privasi Anda penting bagi kami</span>
       <p>
