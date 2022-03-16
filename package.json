@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp ./src/tahsih.pdf build",
+    "build": "react-scripts build && cp ./src/tashih.pdf build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
