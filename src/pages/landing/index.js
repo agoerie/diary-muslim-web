@@ -42,11 +42,17 @@ const landingPage = () => {
                 to best offers.
               </p>
               <div className="flex">
-                <img
-                  src={buttonApple}
-                  alt=""
-                  className="button-link apple-button"
-                />
+                <a
+                  href="https://apps.apple.com/id/app/diary-muslim/id1611557968"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={buttonApple}
+                    alt=""
+                    className="button-link apple-button"
+                  />
+                </a>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.diarymuslim"
                   target="_blank"
