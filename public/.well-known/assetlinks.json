@@ -1,0 +1,21 @@
+{
+    "statements": [
+        {
+            "source": {
+                "web": {
+                "site": "https://diarymuslim.com"
+                }
+            },
+            "relation": "delegate_permission/common.handle_all_urls",
+            "target": {
+                "androidApp": {
+                    "packageName": "com.diarymuslim",
+                    "certificate": {
+                        "sha256Fingerprint": "2B:FB:09:64:2C:AD:59:5E:EF:B1:B9:CF:FF:48:14:94:74:0E:68:C4:92:FE:12:A1:1F:3D:BF:22:D6:E4:6A:23"
+                    }
+                }
+            }
+        }
+    ],
+    "maxAge": "599.998704399s"
+}

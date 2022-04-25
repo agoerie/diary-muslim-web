@@ -8,21 +8,9 @@ jobs:
     name: Deploying to Server Prod
     runs-on: ubuntu-latest
 
-    steps:          
+    steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
-      - name: Show Secret
-        env:
-          SERVER_USERNAME: ${{ secrets.SERVER_USERNAME_PROD }}
-          SERVER_PASS: ${{ secrets.SERVER_PASSWORD_PROD }}
-          SERVER_HOST: ${{ secrets.HOST_PROD }}
-          SERVER_PORT: ${{ secrets.PORT_PROD }}
-        run: | 
-          echo ${SERVER_USERNAME} | sed 's/./& /g'
-          echo ${SERVER_PASS} | sed 's/./& /g'
-          echo ${SERVER_HOST} | sed 's/./& /g'
-          echo ${SERVER_PORT} | sed 's/./& /g'
 
       - name: Setup node js
         uses: actions/setup-node@v1
