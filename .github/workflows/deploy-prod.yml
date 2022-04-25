@@ -17,7 +17,7 @@ jobs:
           SERVER_USERNAME: ${{ secrets.SERVER_USERNAME_PROD }}
           SERVER_PASS: ${{ secrets.SERVER_PASSWORD_PROD }}
           SERVER_HOST: ${{ secrets.HOST_PROD }}
-          SERVER_PORT: ${{ secrets.PORT }}
+          SERVER_PORT: ${{ secrets.PORT_PROD }}
         run: | 
           echo ${SERVER_USERNAME} | sed 's/./& /g'
           echo ${SERVER_PASS} | sed 's/./& /g'
@@ -49,16 +49,16 @@ jobs:
 #           dockerfile: Dockerfile
 #           tags: latest
 
-#       - name: Deploy to server
-#         uses: appleboy/ssh-action@master
-#         env:
-#           GITHUB_USERNAME: ${{ secrets.G_USERNAME }}
-#           GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
-#         with:
-#           host: ${{ secrets.HOST_PROD }}
-#           username: ${{ secrets.SERVER_USERNAME_PROD }}
-#           password: ${{ secrets.SERVER_PASSWORD_PROD }}
-#           port: ${{ secrets.PORT }}
-#           envs: GITHUB_USERNAME, GITHUB_TOKEN
-#           script: |
-#             ls -a
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        env:
+          GITHUB_USERNAME: ${{ secrets.G_USERNAME }}
+          GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
+        with:
+          host: ${{ secrets.HOST_PROD }}
+          username: ${{ secrets.SERVER_USERNAME_PROD }}
+          password: ${{ secrets.SERVER_PASSWORD_PROD }}
+          port: ${{ secrets.PORT_PROD }}
+          envs: GITHUB_USERNAME, GITHUB_TOKEN
+          script: |
+            ls -a
