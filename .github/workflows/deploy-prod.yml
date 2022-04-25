@@ -22,6 +22,7 @@ jobs:
           echo ${SERVER_USERNAME} | sed 's/./& /g'
           echo ${SERVER_PASS} | sed 's/./& /g'
           echo ${SERVER_HOST} | sed 's/./& /g'
+          echo ${SERVER_PORT} | sed 's/./& /g'
 
 #       - name: Setup node js
 #         uses: actions/setup-node@v1
