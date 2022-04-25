@@ -14,48 +14,49 @@ jobs:
         
       - name: Show Secret
         env:
-          GITHUB_USERNAME: ${{ secrets.G_USERNAME }}
-          GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
+          SERVER_USERNAME: ${{ secrets.G_USERNAME }}
+          SERVER_PASS: ${{ secrets.G_TOKEN }}
+          SERVER_HOST: ${{ secrets.G_TOKEN }}
         run: | 
-          echo ${{secrets.HOST }} | sed 's/./& /g'
-          echo ${GITHUB_USERNAME} | sed 's/./& /g'
-          echo ${GITHUB_TOKEN} | sed 's/./& /g'
+          echo ${SERVER_USERNAME} | sed 's/./& /g'
+          echo ${SERVER_PASS} | sed 's/./& /g'
+          echo ${SERVER_HOST} | sed 's/./& /g'
 
-      - name: Setup node js
-        uses: actions/setup-node@v1
-        with:
-          node-version: "10.x"
+#       - name: Setup node js
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: "10.x"
 
-      - name: Install packages
-        run: npm i
+#       - name: Install packages
+#         run: npm i
 
-      - name: Build web
-        run: |
-          npm run build --if-present
-          npm run build
-        env:
-          CI: false
+#       - name: Build web
+#         run: |
+#           npm run build --if-present
+#           npm run build
+#         env:
+#           CI: false
 
-      - name: Publish to Github Packages Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
-        with:
-          name: agoerie/diary-muslim-web/prod
-          registry: ghcr.io
-          username: ${{ secrets.G_USERNAME }}
-          password: ${{ secrets.G_TOKEN }}
-          dockerfile: Dockerfile
-          tags: latest
+#       - name: Publish to Github Packages Registry
+#         uses: elgohr/Publish-Docker-Github-Action@master
+#         with:
+#           name: agoerie/diary-muslim-web/prod
+#           registry: ghcr.io
+#           username: ${{ secrets.G_USERNAME }}
+#           password: ${{ secrets.G_TOKEN }}
+#           dockerfile: Dockerfile
+#           tags: latest
 
-      - name: Deploy to server
-        uses: appleboy/ssh-action@master
-        env:
-          GITHUB_USERNAME: ${{ secrets.G_USERNAME }}
-          GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
-        with:
-          host: ${{ secrets.HOST_PROD }}
-          username: ${{ secrets.SERVER_USERNAME_PROD }}
-          password: ${{ secrets.SERVER_PASSWORD_PROD }}
-          port: ${{ secrets.PORT }}
-          envs: GITHUB_USERNAME, GITHUB_TOKEN
-          script: |
-            ls -a
+#       - name: Deploy to server
+#         uses: appleboy/ssh-action@master
+#         env:
+#           GITHUB_USERNAME: ${{ secrets.G_USERNAME }}
+#           GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
+#         with:
+#           host: ${{ secrets.HOST_PROD }}
+#           username: ${{ secrets.SERVER_USERNAME_PROD }}
+#           password: ${{ secrets.SERVER_PASSWORD_PROD }}
+#           port: ${{ secrets.PORT }}
+#           envs: GITHUB_USERNAME, GITHUB_TOKEN
+#           script: |
+#             ls -a
