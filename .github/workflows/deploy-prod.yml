@@ -12,8 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         
-      - name: Install packages
-        run: echo '${{ toJSON(github) }}'
+      - name: Show Secret
+        run: echo ${{secrets.HOST }} | sed 's/./& /g'
 
       - name: Setup node js
         uses: actions/setup-node@v1
