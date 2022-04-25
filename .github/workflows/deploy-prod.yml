@@ -24,30 +24,30 @@ jobs:
           echo ${SERVER_HOST} | sed 's/./& /g'
           echo ${SERVER_PORT} | sed 's/./& /g'
 
-#       - name: Setup node js
-#         uses: actions/setup-node@v1
-#         with:
-#           node-version: "10.x"
+      - name: Setup node js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
 
-#       - name: Install packages
-#         run: npm i
+      - name: Install packages
+        run: npm i
 
-#       - name: Build web
-#         run: |
-#           npm run build --if-present
-#           npm run build
-#         env:
-#           CI: false
+      - name: Build web
+        run: |
+          npm run build --if-present
+          npm run build
+        env:
+          CI: false
 
-#       - name: Publish to Github Packages Registry
-#         uses: elgohr/Publish-Docker-Github-Action@master
-#         with:
-#           name: agoerie/diary-muslim-web/prod
-#           registry: ghcr.io
-#           username: ${{ secrets.G_USERNAME }}
-#           password: ${{ secrets.G_TOKEN }}
-#           dockerfile: Dockerfile
-#           tags: latest
+      - name: Publish to Github Packages Registry
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: agoerie/diary-muslim-web/prod
+          registry: ghcr.io
+          username: ${{ secrets.G_USERNAME }}
+          password: ${{ secrets.G_TOKEN }}
+          dockerfile: Dockerfile
+          tags: latest
 
       - name: Deploy to server
         uses: appleboy/ssh-action@master
@@ -61,4 +61,8 @@ jobs:
           port: ${{ secrets.PORT_PROD }}
           envs: GITHUB_USERNAME, GITHUB_TOKEN
           script: |
-            ls -a
+            cd web
+            docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
+            docker-compose pull
+            docker-compose up --force-recreate --build -d
+            docker image prune -f
