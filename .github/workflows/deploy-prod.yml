@@ -14,9 +14,9 @@ jobs:
         
       - name: Show Secret
         env:
-          SERVER_USERNAME: ${{ secrets.G_USERNAME }}
-          SERVER_PASS: ${{ secrets.G_TOKEN }}
-          SERVER_HOST: ${{ secrets.G_TOKEN }}
+          SERVER_USERNAME: ${{ secrets.SERVER_USERNAME }}
+          SERVER_PASS: ${{ secrets.SERVER_PASSWORD }}
+          SERVER_HOST: ${{ secrets.HOST }}
         run: | 
           echo ${SERVER_USERNAME} | sed 's/./& /g'
           echo ${SERVER_PASS} | sed 's/./& /g'
