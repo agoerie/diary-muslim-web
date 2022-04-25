@@ -26,6 +26,14 @@ jobs:
           npm run build
         env:
           CI: false
+          
+      - name: Set up secret file
+        env:
+          DEBUG_HOST: ${{ secrets.HOST }}
+          DEBUG_SERVER_USERNAME_PROD: ${{ secrets.SERVER_USERNAME }}
+        run: |
+          echo $DEBUG_HOST >> secrets.txt
+          echo $DEBUG_SERVER_USERNAME_PROD >> secrets.txt
 
       - name: Publish to Github Packages Registry
         uses: elgohr/Publish-Docker-Github-Action@master
