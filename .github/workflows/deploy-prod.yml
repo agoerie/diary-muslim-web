@@ -17,6 +17,7 @@ jobs:
           SERVER_USERNAME: ${{ secrets.SERVER_USERNAME_PROD }}
           SERVER_PASS: ${{ secrets.SERVER_PASSWORD_PROD }}
           SERVER_HOST: ${{ secrets.HOST_PROD }}
+          SERVER_PORT: ${{ secrets.PORT }}
         run: | 
           echo ${SERVER_USERNAME} | sed 's/./& /g'
           echo ${SERVER_PASS} | sed 's/./& /g'
