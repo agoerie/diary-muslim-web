@@ -2,13 +2,22 @@
     "applinks": {
         "apps": [],
         "details": [
-             {
-               "appID": "NBV74HT852.com.dm.diarymuslim",
-               "paths":[
-                    "/",
-                    "*"
-             ]
-             }
-         ]
-     }
-  }
+            {
+                "appID": "4J6ZZ88BBF.com.dm.diarymuslim",
+                "paths": [
+                    "NOT /e/*",
+                    "*",
+                    "/"
+                ]
+            },
+            {
+                "appID": "4J6ZZ88BBF.com.dm.diarymuslim",
+                "paths": [
+                    "NOT /e/*",
+                    "*",
+                    "/"
+                ]
+            }
+        ]
+    }
+}
