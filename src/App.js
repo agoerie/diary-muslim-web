@@ -14,7 +14,7 @@ const App = () => (
         <Route exact path="/term" component={TermPage} />
         <Route exact path="/privacy" component={PrivacyPage} />
         <Route exact path="/about" component={AboutPage} />
-        <Route exact path="/term-challenge" component={TermChallengePage} />
+        <Route exact path="/termchallenge" component={TermChallengePage} />
       </Switch>
     </>
   </Router>
