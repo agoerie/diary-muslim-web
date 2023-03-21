@@ -3,31 +3,29 @@ import "./styles.css";
 const termChallengePage = () => {
   return (
     <div class="about-section">
-      <h4>Syarat & Ketentuan – Program 1 Day 1 Juz</h4>
+      <h4>Syarat & Ketentuan – Challenge Program One Day One Juz</h4>
       <p class="line-space">
         Program ini bertujuan untuk menjaga kita selalu berinteraksi dan
-        ber-istiqomah setiap hari membaca Al- Quran <b>satu hari satu Juz</b>
+        Istiqomah setiap hari membaca Al-Quran <b>satu hari satu Juz</b>
       </p>
-      <span class="span-bold">
-        1. Peserta harus join challenge – Program One Day One Juz
-      </span>
+      <span>1. Peserta harus join challenge – Program One Day One Juz</span>
       <p></p>
-      <span class="span-bold">
+      <span>
         2. Peserta menyelesaikan program khatam baca Al-Quran ( tanggal mulai
         dan berakhir sesuai ketentuan yg sudah ditetapkan)
       </span>
       <p></p>
-      <span class="span-bold">
+      <span>
         3. Peserta melakukan tilawah / membaca Al-Quran hanya di Aplikasi Diary
         Muslim
       </span>
       <p></p>
-      <span class="span-bold">
+      <span>
         4. Tilawah Al-Quran dilakukan setiap hari dan berurutan dimulai dari
         hari 1 ( Day-1) dari juz 1 sampai dengan hari 30 (Day-30) Juz 30.
       </span>
       <p></p>
-      <span class="span-bold">
+      <span>
         5. Peserta yang bisa menyelesaikan sesuai target akan mendapat Badge dan
         Poin
       </span>
@@ -44,8 +42,8 @@ const termChallengePage = () => {
         <li>
           Jumlah poin yang didapat akan dihitung berdasarkan kehadiran mengaji
           per hari-nya, Perhitungan poin misalnya seperti berikut :
-          <div>1 hari = 1 juz = 24 poin</div>
-          <div>contoh : 30 hari x 24 = 720 poin ; 10 hari x 24 = 240 poin</div>
+          <div>1 hari = 1 juz = 10 poin</div>
+          <div>contoh : 30 hari x 10 = 300 poin ; 10 hari x 10 = 100 poin</div>
         </li>
       </ul>
     </div>
