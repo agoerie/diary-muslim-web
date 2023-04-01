@@ -28,7 +28,7 @@ jobs:
           CI: false
 
       - name: Publish to Github Packages Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: agoerie/diary-muslim-web/prod
           registry: ghcr.io
