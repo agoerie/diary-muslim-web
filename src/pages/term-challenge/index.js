@@ -55,8 +55,8 @@ const termChallengePage = () => {
       <span>1. Peserta harus join challenge – Program One Day One Verse</span>
       <p></p>
       <span>
-        2. Peserta menyelesaikan program khatam baca Al-Quran ( tanggal mulai
-        dan berakhir sesuai ketentuan yg sudah ditetapkan)
+        2. Peserta menyelesaikan program baca Al-Quran ( tanggal mulai dan
+        berakhir sesuai ketentuan yg sudah ditetapkan)
       </span>
       <p></p>
       <span>
