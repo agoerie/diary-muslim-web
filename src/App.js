@@ -24,7 +24,7 @@ const App = () => (
         />
         <Route
           exact
-          path="/term-challenge-ayat"
+          path="/term-challenge-verse"
           component={TermChallengeAyatPage}
         />
       </Switch>
