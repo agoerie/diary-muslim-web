@@ -7,6 +7,7 @@ import AboutPage from "./pages/about";
 import TermChallengePage from "./pages/term-challenge";
 import TermChallengeAyatPage from "./pages/term-challenge-ayat";
 import TermChallengeJuzPage from "./pages/term-challenge-juz";
+import TermChallengeSurahPage from "./pages/term-challenge-surah";
 
 const App = () => (
   <Router>
@@ -24,8 +25,13 @@ const App = () => (
         />
         <Route
           exact
-          path="/term-challenge-ayat"
+          path="/term-challenge-verse"
           component={TermChallengeAyatPage}
+        />
+        <Route
+          exact
+          path="/term-challenge-surah"
+          component={TermChallengeSurahPage}
         />
       </Switch>
     </>
