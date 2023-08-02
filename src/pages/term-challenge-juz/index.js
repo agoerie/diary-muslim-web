@@ -3,10 +3,13 @@ import "./styles.css";
 const termChallengeJuzPage = () => {
   return (
     <div class="about-section">
-      <h4>Syarat & Ketentuan – Challenge Program One Day One Juz</h4>
+      <h4>
+        Syarat & Ketentuan – Challenge Program One Day One Juz ( Tantangan
+        Harian Juz )
+      </h4>
       <p class="line-space">
         Program ini bertujuan untuk menjaga kita selalu berinteraksi dan
-        Istiqomah setiap hari membaca Al-Quran <b>satu hari satu Juz</b>
+        Istiqomah setiap hari membaca Al- Quran <b>satu hari satu Juz</b>
       </p>
       <span>1. Peserta harus join challenge – Program One Day One Juz</span>
       <p></p>
@@ -29,6 +32,8 @@ const termChallengeJuzPage = () => {
         5. Peserta yang bisa menyelesaikan sesuai target akan mendapat Badge dan
         Poin
       </span>
+      <p></p>
+      <span>6. Badge Program yang ditampilkan di user profile :</span>
       <ul>
         <li>
           Badge Emas = untuk peserta yang selesai membaca 30 Juz dan sesuai
@@ -39,13 +44,20 @@ const termChallengeJuzPage = () => {
           sesuai target waktu yang ditentukan , misalnya : Membaca Al-Quran 30
           juz tapi hanya dalam 10 hari
         </li>
-        <li>
-          Jumlah poin yang didapat akan dihitung berdasarkan kehadiran mengaji
-          per hari-nya, Perhitungan poin misalnya seperti berikut :
-          <div>1 hari = 1 juz = 10 poin</div>
-          <div>contoh : 30 hari x 10 = 300 poin ; 10 hari x 10 = 100 poin</div>
-        </li>
       </ul>
+      <p></p>
+      <span>
+        7. Jumlah poin yang didapat akan dihitung berdasarkan kehadiran mengaji
+        per hari-nya, Perhitungan poin misalnya seperti berikut :
+        <div style={{ marginLeft: 80, marginTop: 8 }}>
+          1 hari = 1 juz = 10 poin
+        </div>
+        <div style={{ marginLeft: 80 }}>
+          contoh : 30 hari x 10 = 300 poin ; 10 hari x 10 = 100 poin
+        </div>
+      </span>
+      <p></p>
+      <span>8. Penukaran poin akan diinformasikan jadwalnya kemudian.</span>
     </div>
   );
 };
