@@ -1,0 +1,23 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "4J6ZZ88BBF.com.dm.diarymuslim",
+                "paths": [
+                    "NOT /e/*",
+                    "*",
+                    "/"
+                ]
+            },
+            {
+                "appID": "4J6ZZ88BBF.com.dm.diarymuslim",
+                "paths": [
+                    "NOT /e/*",
+                    "*",
+                    "/"
+                ]
+            }
+        ]
+    }
+}
