@@ -27,16 +27,7 @@ jobs:
         env:
           CI: false
 
-      # - name: Publish to Github Packages Registry
-      #   uses: elgohr/Publish-Docker-Github-Action@v5
-      #   with:
-      #     name: agoerie/diary-muslim-web/prod
-      #     registry: ghcr.io
-      #     username: ${{ secrets.G_USERNAME }}
-      #     password: ${{ secrets.G_TOKEN }}
-      #     dockerfile: Dockerfile
-      #     tags: latest
-
+      ######################## Comment if uses docker / container #####################
       - name: Deploy to server
         uses: garygrossgarten/github-action-scp@release
         with:
@@ -46,6 +37,18 @@ jobs:
           port: ${{ secrets.PORT_PROD }}
           local: build
           remote: /home/agung/web/
+      ######################## Comment if uses docker / container #####################
+
+      ######################## Uncomment if uses docker / container #####################
+      # - name: Publish to Github Packages Registry
+      #   uses: elgohr/Publish-Docker-Github-Action@v5
+      #   with:
+      #     name: agoerie/diary-muslim-web/prod
+      #     registry: ghcr.io
+      #     username: ${{ secrets.G_USERNAME }}
+      #     password: ${{ secrets.G_TOKEN }}
+      #     dockerfile: Dockerfile
+      #     tags: latest
 
       # - name: Deploy to server
       #   uses: appleboy/ssh-action@master
@@ -64,3 +67,4 @@ jobs:
       #       docker compose pull
       #       docker compose up --force-recreate --build -d
       #       docker image prune -f
+      ######################## Uncomment if uses docker / container #####################
