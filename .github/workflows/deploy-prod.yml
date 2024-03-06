@@ -51,6 +51,6 @@ jobs:
           script: |
             cd web
             docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
-            docker-compose pull
-            docker-compose up --force-recreate --build -d
+            docker compose pull
+            docker compose up --force-recreate --build -d
             docker image prune -f

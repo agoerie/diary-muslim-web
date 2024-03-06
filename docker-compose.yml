@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+    image: ghcr.io/agoerie/diary-muslim-web/prod:latest
+    container_name: diary-muslim-web
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./volumes/web:/var/www/html
