@@ -8,7 +8,7 @@ const deleteAccountPage = () => {
         By following this process, your account and data will be permanently
         deleted, and our team will not be able to recover the account.
       </p>
-      <p>From Diary Muslim mobile app</p>
+      <p class="bold-text">From Diary Muslim mobile app</p>
       <span>
         1. Open your settings by tapping the “gear” icon in the upper right-hand
         corner of User tab.

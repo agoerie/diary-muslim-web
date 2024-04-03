@@ -57,4 +57,9 @@
   .spaced-text {
     letter-spacing: 2px; /* You can adjust the value as needed */
   }
+
+  .bold-text {
+    font-weight:bolder;
+    font-size: 17px;
+  }
   
