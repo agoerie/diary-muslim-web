@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "gilroyblack";
+    font-weight: 400;
+    src: url("../../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-Black_0.otf")
+      format("truetype");
+  }
+  
+  @font-face {
+    font-family: "gilroyextrabold";
+    font-weight: 400;
+    src: url("../../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-ExtraBold_0.otf")
+      format("truetype");
+  }
+  
+  @font-face {
+    font-family: "gilroymedium";
+    font-weight: 400;
+    src: url("../../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-Medium_0.otf")
+      format("truetype");
+  }
+  
+  @font-face {
+    font-family: "gilroyregular";
+    font-weight: 400;
+    src: url("../../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-Regular_0.otf")
+      format("truetype");
+  }
+  
+  @font-face {
+    font-family: "gilroysemibold";
+    font-weight: 400;
+    src: url("../../assets/fonts/Radomir\ Tinkov\ -\ Gilroy-SemiBold_0.otf")
+      format("truetype");
+  }
+  
+  li.menu-item:not(:last-child) {
+    margin: 0 0 5px 0;
+  }
+  
+  .line-space {
+    margin-bottom: 30px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    padding-top: 0px;
+    text-align: left;
+    color: black;
+  }
+  
+  .span-bold {
+    font-weight: bold;
+    font-size: 14.7px;
+    color: "#000000";
+  }
+
+  .spaced-text {
+    letter-spacing: 2px; /* You can adjust the value as needed */
+  }
+  
