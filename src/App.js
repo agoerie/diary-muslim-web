@@ -8,6 +8,7 @@ import TermChallengePage from "./pages/term-challenge";
 import TermChallengeAyatPage from "./pages/term-challenge-ayat";
 import TermChallengeJuzPage from "./pages/term-challenge-juz";
 import TermChallengeSurahPage from "./pages/term-challenge-surah";
+import DeleteAccountPage from "./pages/delete-account";
 
 const App = () => (
   <Router>
@@ -33,6 +34,7 @@ const App = () => (
           path="/term-challenge-surah"
           component={TermChallengeSurahPage}
         />
+        <Route exact path="/delete-account" component={DeleteAccountPage} />
       </Switch>
     </>
   </Router>
