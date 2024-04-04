@@ -36,7 +36,7 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD_PROD }}
           port: ${{ secrets.PORT_PROD }}
           local: build
-          remote: /var/www/web.diarymuslim.com
+          remote: /var/www/web.diarymuslim.com/
       ######################## Comment if uses docker / container #####################
 
       ######################## Uncomment if uses docker / container #####################
