@@ -53,3 +53,9 @@ li.menu-item:not(:last-child) {
   font-size: 14.7px;
   color: "#000000";
 }
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px;
+  }
+}

@@ -172,3 +172,100 @@ html {
   font-size: 15px;
   color: #9eabb0;
 }
+
+@media (max-width: 1024px) {
+  .flex-between {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin: 30px auto;
+    display: block;
+  }
+
+  .row-title-header {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .banner {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin-top: 40px;
+  }
+
+  .flex {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .apple-button {
+    margin-right: 0;
+  }
+
+  .wrapper-footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .description br {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-header {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+
+  .title-version {
+    font-size: 11px;
+    margin-top: 5px;
+    display: block;
+  }
+
+  .button-link {
+    width: 170px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .description-header br {
+    display: none;
+  }
+
+  .description-header {
+    font-size: 16px;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .banner {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .title-caption {
+    font-size: 16px;
+    padding: 0 10px;
+    display: block;
+  }
+}
